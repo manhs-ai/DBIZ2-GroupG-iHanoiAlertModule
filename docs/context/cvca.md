@@ -59,7 +59,7 @@
 
 ## 5. Stakeholder requirements
 
-Derived from the problems and flows; each is realised by the functions in [w1-function-list.md](w1-function-list.md).
+Derived from the problems and flows; each is realised by the functions in [w1-function-list.md](../function-list/w1-function-list.md).
 
 | ID | Stakeholder | Requirement | Addresses | Functions |
 |---|---|---|---|---|
@@ -78,5 +78,5 @@ Derived from the problems and flows; each is realised by the functions in [w1-fu
 Tax and other financial flows; the rest of the iHanoi platform; manual classification (replaced).
 
 ## 7. Open points
-- Actor codes: the CVCA codes are the master. The use case diagram's ACT-G1/ACT-G2 are relabelled ACT-G2 (HPC) and ACT-O3 (LGSP) in these files; see the actor register in [w0-scope.md](w0-scope.md) §6.
+- Actor codes: the CVCA codes are the master. The use case diagram's ACT-G1/ACT-G2 are relabelled ACT-G2 (HPC) and ACT-O3 (LGSP) in these files; see the actor register in [w0-scope.md](../function-list/w0-scope.md) §6.
 - The CVCA has no stakeholder for the human reviewers who handle low-confidence reports (assumed HPC staff; open question #3).

@@ -54,4 +54,4 @@ flowchart LR
 - The push-notification provider (FR-03-01-INT) is treated as part of the internal Notification Service and is deliberately not an entity. Add it if a named external provider is chosen.
 - Police appear as a separate entity here, but are part of O1 in the CVCA.
 - The drawing labels the entity "Police (UC-P2)"; these files use "Police" with code ACT-P2.
-- Data stores touched by these flows are listed in [w0-scope.md](w0-scope.md) Table 4.
+- Data stores touched by these flows are listed in [w0-scope.md](../function-list/w0-scope.md) Table 4.
