@@ -1,6 +1,6 @@
 # Screen List: iHanoi Alert Module
 
-> DBIZ2 Lesson 8 · Sources: [usage-flow.md](usage-flow.md), the 17 activity diagrams ([activity-index.md](../activity-diagrams/activity-index.md)), W0 Table 1, W1 (FE rows), W4 priorities. Folder: `external-design/` (the template path is `docs/external-design/`).
+> DBIZ2 Lesson 8 · Sources: [usage-flow.md](usage-flow.md), the 17 activity diagrams ([activity-index.md](../activity/activity-index.md)), W0 Table 1, W1 (FE rows), W4 priorities. Folder: `external-design/` (the template path is `docs/external-design/`).
 
 Screen ID pattern: `S-<feature>-<nn>`, for example `S-F01-02` is the second screen of feature F-01. Screens shared by every feature use `S-F00-<nn>`. Sign in is provided by the core iHanoi platform and is not a screen of this module (the transition diagrams start after it).
 
@@ -9,7 +9,7 @@ Screen ID pattern: `S-<feature>-<nn>`, for example `S-F01-02` is the second scre
 | Screen ID | Screen name | Actor | Feature | Shown when (purpose) | Entry points | Use cases / FRs served | Priority | Screen spec |
 |---|---|---|---|---|---|---|---|---|
 | S-F00-01 | Alert home | Citizens (ACT-E1); Police (ACT-P2); HPC & Government Agencies (ACT-G2) | F-00 | A signed-in user opens the Alert Module from iHanoi. | Alert Module tile on the iHanoi home screen (after sign in) | All use cases (hub); FR-05-02 | Must | `screens/screen-spec-S-F00-01.md` |
-| S-F01-01 | Submit incident report | Citizens (ACT-E1) | F-01 | The citizen taps "Report an incident". | S-F00-01 | UC-01, UC-02; FR-01-01, FR-02-01 | Must | `screens/screen-spec-S-F01-01.md` |
+| S-F01-01 | Submit incident report | Citizens (ACT-E1) | F-01 | The citizen taps "Report an incident". | S-F00-01 | UC-01, UC-02; FR-01-01, FR-02-01, FR-03-03 (outcome notice, assumed) | Must | `screens/screen-spec-S-F01-01.md` |
 | S-F01-02 | My reports | Citizens (ACT-E1) | F-01 | The citizen taps "My reports". | S-F00-01 | UC-03; FR-01-02 | Should | `screens/screen-spec-S-F01-02.md` |
 | S-F01-03 | Report status detail | Citizens (ACT-E1) | F-01 | The citizen opens one of their reports. | S-F01-02; S-F01-01 (View my report) | UC-03; FR-01-02 | Should | `screens/screen-spec-S-F01-03.md` |
 | S-F01-04 | Report missing person / pet / asset | Citizens (ACT-E1) | F-01 | The citizen taps "Report missing person / pet / asset". | S-F00-01 | UC-05; FR-01-03 (calls FR-03-02, FR-01-05) | Must | `screens/screen-spec-S-F01-04.md` |

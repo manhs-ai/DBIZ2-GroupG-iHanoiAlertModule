@@ -24,7 +24,7 @@
 | Coordinates | latitude, longitude, four decimals (assumption) | 21.0136, 105.8014 |
 | Confidence score | two decimals, 0.00 to 1.00 | 0.85 |
 | Duration (SLA) | hours with one decimal | 3.0 h |
-| Status | exactly one of Submitted, Routed, In Progress, Resolved; "Handed to Police" is shown as In Progress until decided | Routed |
+| Status | exactly one of Submitted, Routed, In Progress, Resolved; "Handed to Police" is shown as In Progress until decided. Vietnamese labels: Đã gửi, Đã chuyển, Đang xử lý, Đã giải quyết | Routed |
 
 ID formats come from the test data of the activity diagrams (AD-UC-06 and AD-UC-15 use other sample IDs); the team must fix one pattern.
 
@@ -46,6 +46,10 @@ ID formats come from the test data of the activity diagrams (AD-UC-06 and AD-UC-
 | Banner | Non-blocking information or an error inside a screen | Sits where the content would be |
 | Modal | Confirm or cancel a single action | Never for navigation; examples: "Discard report?", "Confirm status change" |
 | Toast | Short confirmation after success | Disappears by itself after a few seconds |
+| Skeleton | Loading state of a list or a detail screen | Grey bars in the shape of the content; no spinner on the whole screen. Buttons that do not depend on the data stay usable |
+| Spinner button | Loading state after the user taps the primary button | The button shows a spinner and a verb in progress ("Sending…", "Updating…") and is disabled; form fields are locked |
+| Retry action | Inside an error banner when the request can be repeated | Text button "Retry" at the right end of the banner |
+| Blocked message | Access denied or "not available" in place of the whole content | Icon plus one sentence from section 4, and a way back (back arrow or Back button) |
 
 ## 4. Messages
 
@@ -65,3 +69,13 @@ ID formats come from the test data of the activity diagrams (AD-UC-06 and AD-UC-
 - Information is never carried by colour alone (WCAG 2.2, 1.4.1): statuses, "OVER SLA" and errors use text and an icon.
 - Tap targets at least 24 by 24 CSS pixels (WCAG 2.2, 2.5.8).
 - Smallest supported screen width: 360px. The module is designed mobile first; staff screens use the same layout (assumption: a wider web layout for HPC dashboards is a later decision).
+
+## 6. State mockups
+
+- Every screen has one state sheet, `screens/img/ENG/<Screen ID>-en.png` (English) and `screens/img/VIE/<Screen ID>-vi.png` (Vietnamese). Editable sources: `screens/figma/en/` and `screens/figma/vi/` (SVG, drag into Figma; one frame per screen, text and shapes stay editable).
+- Frames follow section 4 of the Screen Spec: Default, Empty, Loading, Error and Success first, then the other states of the spec (system error, duplicate, modal, access denied). A state marked "Not applicable" keeps its frame with the reason ("Không áp dụng"), so reviewers see it was considered.
+- When a spec names two kinds of error (validation and system, or access denied and system), each gets its own frame.
+- Visual style: blue gradient header with a city skyline and a topic icon, large screen title, white rounded card, pill chips for statuses, navy pill buttons (outline for secondary), grey skeleton bars while loading, dashed tiles for photos, a map block with a location chip. The status bar shows 9:41, signal, wifi and battery. There are no element numbers and no tab bar.
+- Every sheet exists in two languages with the same frames, order and sample data: English (the language of the Screen Specs, `screens/img/ENG/`, `screens/figma/en/`) and Vietnamese, the default interface language of section 1 (`screens/img/VIE/`, `screens/figma/vi/`; address "bạn"). Sample data uses the formats of section 2. Values that the specs leave open are shown as sample data in the mockups only: SLA thresholds 2 h (routing) and 24 h (resolution) on S-F04-01 (spec question 1), and the station name on S-F03-02. Statuses use exactly the four values of section 2.
+- A primary button whose validation rule is not yet met is drawn disabled in the Default state.
+- S-F01-01 follows the reference design for the form components: description with a counter, three dashed media tiles, a map with a "Use my location" chip, an additional-details dropdown, and the send button and Cancel link below the card. The citizen does not choose an incident type or a priority: the system classifies the report, an authority reviewer verifies it when needed, and the citizen is notified afterwards (S-F01-01 spec, rule SR-006). S-F01-04 to S-F01-06 use the same components (icon chips for the case type or outcome, dashed photo tile, send button outside the card).

@@ -5,7 +5,7 @@
 | Product | iHanoi Alert Module |
 | Version | v0.1 |
 | Date | 2026-11-07 |
-| Sources | W0 Table 1 (use case inventory); Use Case Diagram; `activity-diagrams/activity-index.md` |
+| Sources | W0 Table 1 (use case inventory); Use Case Diagram; `activity/activity-index.md` |
 
 ## Before you draw: is Lesson 4 still true?
 
