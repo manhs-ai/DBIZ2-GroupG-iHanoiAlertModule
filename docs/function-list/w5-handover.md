@@ -67,7 +67,7 @@ Paste each back into the owning feature's `spec.md`.
 
 Three of the seven questions (#1–#3) are blocking and all three sit in F-02 (the AI routing feature, 38% of in-scope cost). Resolve them before the first F-02 sprint. Questions #6 and #7 were added in this write-up from the cost and cash-flow review; the workbook lists five.
 
-The activity diagrams ([activity-diagrams/activity-index.md](activity-diagrams/activity-index.md) §5) list 12 blocking questions in total, 9 in F-02, 1 in F-01 (AD-UC-05) and 2 in F-05 (AD-UC-16). Most important new one: FR-02-05 (Must) depends on the LGSP result of FR-02-04 (Could); decide what handles low-confidence reports if FR-02-04 is not built.
+The activity diagrams ([activity-diagrams/activity-index.md](../activity/activity-index.md) §5) list 12 blocking questions in total, 9 in F-02, 1 in F-01 (AD-UC-05) and 2 in F-05 (AD-UC-16). Most important new one: FR-02-05 (Must) depends on the LGSP result of FR-02-04 (Could); decide what handles low-confidence reports if FR-02-04 is not built.
 
 ## 5. Risks to carry into DBIZ3
 

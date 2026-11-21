@@ -113,4 +113,4 @@ The workbook has no separate business-rule table. The rules below are extracted 
 - **System-only use cases.** UC-02, 07, 08, 09 have no external actor in the diagram; W0 lists "System (…)" as primary actor. Convention kept.
 - **F-03** has 3 L2 rows only because FR-03-03 was added from a single context flow; it is now a Won't.
 
-The source `.drawio` and `.xlsx` files were not changed; the items above need the same edits there (list in [activity-diagrams/activity-index.md](activity-diagrams/activity-index.md) §6). The activity diagrams apply the same conventions plus the routing, audit and police-receipt conventions in §2 of that file.
+The source `.drawio` and `.xlsx` files were not changed; the items above need the same edits there (list in [activity-diagrams/activity-index.md](../activity/activity-index.md) §6). The activity diagrams apply the same conventions plus the routing, audit and police-receipt conventions in §2 of that file.
