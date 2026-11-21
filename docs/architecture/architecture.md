@@ -5,7 +5,7 @@
 ## 1. System requirements
 
 ### Functional
-The 19 L2 functions in [w1-function-list.md](w1-function-list.md), grouped by feature:
+The 19 L2 functions in [w1-function-list.md](../function-list/w1-function-list.md), grouped by feature:
 
 | Feature | Functions | Release priority (W4) |
 |---|---|---|
@@ -50,7 +50,7 @@ flowchart TB
   F05 -. guards .-> F01 & F02 & F03 & F04
 ```
 
-Main data: Incident Report, Missing Case, SLA & Routing Metrics, Audit Trail (maintained); Citizen Account Directory, Agency & Routing Directory, LGSP Integrated Data (read only). See [w0-scope.md](w0-scope.md) Table 4.
+Main data: Incident Report, Missing Case, SLA & Routing Metrics, Audit Trail (maintained); Citizen Account Directory, Agency & Routing Directory, LGSP Integrated Data (read only). See [w0-scope.md](../function-list/w0-scope.md) Table 4.
 
 ## 3. Physical design
 
