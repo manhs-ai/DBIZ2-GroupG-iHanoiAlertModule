@@ -33,12 +33,11 @@ docs/
                                       (W0 to W5, Cash flow and NPV, Capital review)
   report/               Midterm       Midterm_Report_Final.docx
   activity/             Lesson 7      activity-index.md, AD-<UC-ID>.md
-  external-design/      Lesson 8      screen-list.md, screen-transition.md
+  external-design/      Lesson 8      screen-list.md, screen-transition.md, link-design.md (link to the Figma design)
     screens/                          screen-spec-<Screen ID>.md
       img/
         ENG/                          <Screen ID>-en.png (every state of the screen, English)
         VIE/                          <Screen ID>-vi.png (same states, Vietnamese)
-      figma/                          en/<Screen ID>-states-en.svg and vi/<Screen ID>-states-vi.svg (13 each); drag into Figma
 ```
 
 ## Read it in this order
@@ -56,7 +55,7 @@ docs/
 | 9 | L7 | activity-index.md, then AD-UC-01 to AD-UC-17 | Inputs check against L3-L4, then one activity diagram per use case |
 | 10 | L8 | ui-conventions.md, then screen-list.md | The shared UI rules; the 13 screens (S-F00-01, S-F01-01 to -06, S-F02-01 to -02, S-F03-01 to -02, S-F04-01 to -02), the modals, and the use cases that have no screen |
 | 11 | L8 | screen-transition.md | How each actor moves between screens, one diagram per actor |
-| 12 | L8 | screens/screen-spec-<Screen ID>.md, img/ENG/ and img/VIE/ | One Screen Spec per screen (13), each with a sheet of every state; editable frames in figma/, in English and Vietnamese |
+| 12 | L8 | screens/screen-spec-<Screen ID>.md, img/ENG/ and img/VIE/ | One Screen Spec per screen (13), each with a sheet of every state; in English and Vietnamese |
 
 ## How the files connect
 
