@@ -101,7 +101,7 @@ sequenceDiagram
 2. **Duplicates:** the notice at SQ-05/06 ends the submission: no new record is created and the citizen sees the existing alertId (FR-02-01). The "confirm or cancel" choice drawn at SQ-06 is dropped; update the drawing.
 3. **Hanoi Portal** receives manually routed reports (SQ-16); it is a lifeline-less external entity on the context diagram (Flow-11).
 
-4. **Response timing:** the confirmation (SQ-17 to SQ-19) is sent right after SQ-07, in parallel with classification and routing, so the citizen does not wait for human review. Numbering is unchanged. Basis: FR-01-01, [AD-UC-01](activity-diagrams/AD-UC-01.md).
+4. **Response timing:** the confirmation (SQ-17 to SQ-19) is sent right after SQ-07, in parallel with classification and routing, so the citizen does not wait for human review. Numbering is unchanged. Basis: FR-01-01, [AD-UC-01](../activity/AD-UC-01.md).
 
 ## Still open
 1. **Invalid reports:** flow A rejects invalid reports; flow B has no validation step and no FR beyond "validate submission".

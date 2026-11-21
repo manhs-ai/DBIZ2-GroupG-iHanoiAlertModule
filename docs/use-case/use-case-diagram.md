@@ -81,10 +81,10 @@ Recommended next: SD-UC-05 and SD-UC-06, because they have Must/Should functions
 
 ## List of activity diagrams
 
-All 17 use cases have an activity diagram in [activity-diagrams/](activity-diagrams/activity-index.md): one file per use case (AD-UC-01 to AD-UC-17), with a shared index, conventions, call map and state table. AD-UC-15 holds two diagrams (view and record).
+All 17 use cases have an activity diagram in [activity-diagrams/](../activity/activity-index.md): one file per use case (AD-UC-01 to AD-UC-17), with a shared index, conventions, call map and state table. AD-UC-15 holds two diagrams (view and record).
 
 ## Issues
 - The diagram has no actor for UC-04's recipients beyond Citizens, and UC-04 is reached from UC-09 only; the missing-person flow (UC-05 → UC-10) notifies police but has no path to a citizen alert.
 - UC-12 is deferred (Won't) but remains in the diagram; mark it as out of release.
-- **Actor IDs** in this write-up follow the CVCA (HPC = ACT-G2, LGSP = ACT-O3); the drawing still uses ACT-G1 for HPC and ACT-G2 for LGSP and needs the same relabel. Register: [w0-scope.md](w0-scope.md) §6.
-- **Hanoi Portal** (CVCA O2) is a target of manual routing (UC-08 → FR-02-03-INT) but is not drawn as an actor; treat it as an external system, as in [context-diagram.md](context-diagram.md) Flow-11.
+- **Actor IDs** in this write-up follow the CVCA (HPC = ACT-G2, LGSP = ACT-O3); the drawing still uses ACT-G1 for HPC and ACT-G2 for LGSP and needs the same relabel. Register: [w0-scope.md](../function-list/w0-scope.md) §6.
+- **Hanoi Portal** (CVCA O2) is a target of manual routing (UC-08 → FR-02-03-INT) but is not drawn as an actor; treat it as an external system, as in [context-diagram.md](../context/context-diagram.md) Flow-11.
