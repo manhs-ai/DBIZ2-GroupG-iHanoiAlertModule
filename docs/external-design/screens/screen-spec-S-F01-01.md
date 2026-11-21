@@ -21,7 +21,7 @@
 
 ![S-F01-01 states](img/ENG/S-F01-01-en.png)
 
-**All states (Default, Empty, Loading, Error, Success, plus the variants of section 4):** English: [`img/ENG/S-F01-01-en.png`](img/ENG/S-F01-01-en.png). Vietnamese version (Bản tiếng Việt): [`img/VIE/S-F01-01-vi.png`](img/VIE/S-F01-01-vi.png). Editable sources: [`figma/en/S-F01-01-states-en.svg`](figma/en/S-F01-01-states-en.svg) and [`figma/vi/S-F01-01-states-vi.svg`](figma/vi/S-F01-01-states-vi.svg) (drag into Figma). The labels are in English, as in this Screen Spec (ui-conventions.md section 1).
+**All states (Default, Empty, Loading, Error, Success, plus the variants of section 4):** English: [`img/ENG/S-F01-01-en.png`](img/ENG/S-F01-01-en.png). Vietnamese version (Bản tiếng Việt): [`img/VIE/S-F01-01-vi.png`](img/VIE/S-F01-01-vi.png). The labels are in English, as in this Screen Spec (ui-conventions.md section 1).
 
 Elements 10 and 11 (additional details, Cancel link) are proposed.
 

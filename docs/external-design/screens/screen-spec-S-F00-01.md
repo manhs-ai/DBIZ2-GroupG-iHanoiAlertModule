@@ -8,7 +8,7 @@
 | Priority | Must |
 | Feature | `F-00 Shared screens (serves FR-05-02 of F-05)` |
 | Activity diagrams | none: navigation hub. It leads to AD-UC-01, 03, 05, 06, 10, 14, 15, 17 |
-| Mockup image | `img/S-F00-01.png` |
+| Mockup image | `img/ENG/S-F00-01-en.png` (all states, English); `img/VIE/S-F00-01-vi.png` (all states, Vietnamese) |
 | Status | Draft |
 
 ## 1. Purpose
@@ -19,9 +19,9 @@
 
 ## 2. Mockup
 
-![S-F00-01](img/S-F00-01.png)
+![S-F00-01 states](img/ENG/S-F00-01-en.png)
 
-Low-fidelity wireframe of the default state, generated from the element inventory below; the numbers on the image are the numbers in the table. Elements marked with a state are not drawn.
+**All states (Default, Empty, Loading, Error, Success, plus the variants of section 4):** English: [`img/ENG/S-F00-01-en.png`](img/ENG/S-F00-01-en.png). Vietnamese version (Bản tiếng Việt): [`img/VIE/S-F00-01-vi.png`](img/VIE/S-F00-01-vi.png). The labels are in English, as in this Screen Spec (ui-conventions.md section 1).
 
 ## 3. Element inventory
 
