@@ -24,14 +24,14 @@
 | [AD-UC-16](AD-UC-16.md) | UC-16 Manage System Integration & API Access | F-05 | Must | Technology Partners · iHanoi Alert Module | 5 | 2 |
 | [AD-UC-17](AD-UC-17.md) | UC-17 Human Verification | F-02 | Must | HPC & Government Agencies · iHanoi Alert Module | 5 | 4 |
 
-Totals: 62 open questions, 12 of them blocking, in 7 of the 17 diagrams (F-01: 1, F-02: 9, F-05: 2). The three blocking questions of [w5-handover.md](../function-list/w5-handover.md) (#1 to #3) overlap with AD-UC-17 questions 5 and 2 and with the LGSP read mode (ADR-004); the rest are new.
+Totals: 62 open questions, 12 of them blocking, in 7 of the 17 diagrams (F-01: 1, F-02: 9, F-05: 2). The three blocking questions of [w5-handover.md](../w5-handover.md) (#1 to #3) overlap with AD-UC-17 questions 5 and 2 and with the LGSP read mode (ADR-004); the rest are new.
 
 ## 2. Conventions applied in every diagram
 
 | # | Convention | Where decided |
 |---|---|---|
-| C1 | Actor codes follow the CVCA: Citizens ACT-E1, HPC & Government Agencies ACT-G2, Police ACT-P2, LGSP ACT-O3, Technology Partners ACT-P1 | [w0-scope.md](../function-list/w0-scope.md) §6 |
-| C2 | Lane names are the Context Diagram entity names: "Citizens & Community Users", "HPC & Government Agencies", "Police", "Technology Partners", "Government Data & Integration Systems (LGSP)", plus "iHanoi Alert Module". Two exceptions are lanes for parts that are not Context entities: "AI Service (Classification)" (ADR-003) and "Hanoi Portal" (Context Flow-11, added) | [context-diagram.md](../context/context-diagram.md) |
+| C1 | Actor codes follow the CVCA: Citizens ACT-E1, HPC & Government Agencies ACT-G2, Police ACT-P2, LGSP ACT-O3, Technology Partners ACT-P1 | [w0-scope.md](../w0-scope.md) §6 |
+| C2 | Lane names are the Context Diagram entity names: "Citizens & Community Users", "HPC & Government Agencies", "Police", "Technology Partners", "Government Data & Integration Systems (LGSP)", plus "iHanoi Alert Module". Two exceptions are lanes for parts that are not Context entities: "AI Service (Classification)" (ADR-003) and "Hanoi Portal" (Context Flow-11, added) | [context-diagram.md](../context-diagram.md) |
 | C3 | A new report is saved as **Submitted**. Routing sets **Routed** on both paths (auto and manual). A report flagged for human verification stays Submitted | FR-01-02, BR-09 |
 | C4 | A likely duplicate is flagged and **no new record is created**; the citizen is shown the existing alertId. There is no confirm or cancel step | FR-02-01, BR-03 |
 | C5 | Classification (UC-07) runs once per report: UC-01 calls UC-08, UC-08 calls UC-07 | Use Case Diagram |
